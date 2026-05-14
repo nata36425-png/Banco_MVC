@@ -45,7 +45,6 @@ public class Empleado extends Persona {
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
-    
-    
+      
     
 }

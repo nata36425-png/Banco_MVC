@@ -19,6 +19,7 @@ public class frmPrincipal extends javax.swing.JPanel {
     public frmPrincipal() {
         initComponents();
         setLocation(null);
+        lblTituloPrincipal.setText("Nuevo texto");
     }
 
     /**
@@ -34,10 +35,10 @@ public class frmPrincipal extends javax.swing.JPanel {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         pnlAdminCuentas = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lblDocumetoCliente = new javax.swing.JLabel();
+        lblCorreoCliente = new javax.swing.JLabel();
+        lblNombreCliente = new javax.swing.JLabel();
+        lblTelefonoCliente = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtDocumento = new javax.swing.JTextField();
         txtNombre = new javax.swing.JTextField();
@@ -53,25 +54,25 @@ public class frmPrincipal extends javax.swing.JPanel {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jComboBox4 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnCrear = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
+        btnActualizar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         pnlAdminClientes = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         lblTituloPrincipal = new javax.swing.JLabel();
 
         jLabel3.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel3.setText("Administrar cuentas");
+        jLabel3.setText("Administrar clientes");
 
-        jLabel2.setText("Documento");
+        lblDocumetoCliente.setText("Documento");
 
-        jLabel4.setText("Correo");
+        lblCorreoCliente.setText("Correo");
 
-        jLabel5.setText("Nombre");
+        lblNombreCliente.setText("Nombre");
 
-        jLabel6.setText("Telefono");
+        lblTelefonoCliente.setText("Telefono");
 
         jLabel7.setText("Fecha de nacimiento");
 
@@ -113,13 +114,19 @@ public class frmPrincipal extends javax.swing.JPanel {
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jButton1.setText("jButton1");
+        btnCrear.setText("Crear");
+        btnCrear.setActionCommand("Crear");
+        btnCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("jButton2");
+        btnBuscar.setText("Buscar");
 
-        jButton3.setText("jButton3");
+        btnActualizar.setText("Actualizar");
 
-        jButton4.setText("jButton4");
+        btnEliminar.setText("Eliminar");
 
         jButton5.setText("jButton5");
 
@@ -160,10 +167,10 @@ public class frmPrincipal extends javax.swing.JPanel {
                                 .addGap(184, 184, 184))
                             .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
                                 .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel2))
+                                    .addComponent(lblTelefonoCliente)
+                                    .addComponent(lblCorreoCliente)
+                                    .addComponent(lblNombreCliente)
+                                    .addComponent(lblDocumetoCliente))
                                 .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
                                         .addGap(174, 174, 174)
@@ -179,12 +186,12 @@ public class frmPrincipal extends javax.swing.JPanel {
                                             .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(120, 120, 120)))
                         .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3)
-                            .addComponent(jButton4)
+                            .addComponent(btnCrear)
+                            .addComponent(btnBuscar)
+                            .addComponent(btnActualizar)
+                            .addComponent(btnEliminar)
                             .addComponent(jButton5))))
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
         pnlAdminCuentasLayout.setVerticalGroup(
             pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -193,23 +200,23 @@ public class frmPrincipal extends javax.swing.JPanel {
                 .addComponent(jLabel3)
                 .addGap(46, 46, 46)
                 .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(lblDocumetoCliente)
                     .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
+                    .addComponent(lblNombreCliente)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(btnCrear))
                 .addGap(18, 18, 18)
                 .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(lblCorreoCliente)
                     .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addComponent(btnBuscar))
                 .addGap(18, 18, 18)
                 .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
+                    .addComponent(lblTelefonoCliente)
                     .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
+                    .addComponent(btnActualizar))
                 .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
                         .addGap(46, 46, 46)
@@ -231,7 +238,7 @@ public class frmPrincipal extends javax.swing.JPanel {
                         .addContainerGap(101, Short.MAX_VALUE))
                     .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton4)
+                        .addComponent(btnEliminar)
                         .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -245,7 +252,7 @@ public class frmPrincipal extends javax.swing.JPanel {
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
 
-        jTabbedPane1.addTab("AdminCuentas", pnlAdminCuentas);
+        jTabbedPane1.addTab("AdminClientes", pnlAdminCuentas);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jLabel1.setText("Administrar clientes");
@@ -322,12 +329,16 @@ public class frmPrincipal extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTelefonoActionPerformed
 
+    private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCrearActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton btnActualizar;
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnCrear;
+    private javax.swing.JButton btnEliminar;
     private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -337,17 +348,17 @@ public class frmPrincipal extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JLabel lblCorreoCliente;
+    private javax.swing.JLabel lblDocumetoCliente;
+    private javax.swing.JLabel lblNombreCliente;
+    private javax.swing.JLabel lblTelefonoCliente;
     private javax.swing.JLabel lblTituloPrincipal;
     private javax.swing.JPanel pnlAdminClientes;
     private javax.swing.JPanel pnlAdminCuentas;
