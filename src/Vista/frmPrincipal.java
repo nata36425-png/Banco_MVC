@@ -33,226 +33,34 @@ public class frmPrincipal extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
+        pnlAdminClientes = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         pnlAdminCuentas = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         lblDocumetoCliente = new javax.swing.JLabel();
         lblCorreoCliente = new javax.swing.JLabel();
         lblNombreCliente = new javax.swing.JLabel();
         lblTelefonoCliente = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        txtDocumento = new javax.swing.JTextField();
-        txtNombre = new javax.swing.JTextField();
-        txtCorreo = new javax.swing.JTextField();
-        txtTelefono = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
+        lblAnionNacimientoCliente = new javax.swing.JLabel();
+        txtDocumentoCliente = new javax.swing.JTextField();
+        txtNombreCliente = new javax.swing.JTextField();
+        txtCorreoCliente = new javax.swing.JTextField();
+        txtTelefonoCliente = new javax.swing.JTextField();
+        cbxDiaNacimientoCliente = new javax.swing.JComboBox<>();
+        cbxMesNacimientoCliente = new javax.swing.JComboBox<>();
+        cbxAñoNacimientoCliente = new javax.swing.JComboBox<>();
+        lblEstaturaCliente = new javax.swing.JLabel();
+        lblTipoDeCliente = new javax.swing.JLabel();
+        txtEstaturaCliente = new javax.swing.JTextField();
+        lblDia = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        btnCrear = new javax.swing.JButton();
-        btnBuscar = new javax.swing.JButton();
-        btnActualizar = new javax.swing.JButton();
-        btnEliminar = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        pnlAdminClientes = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        cbxTipoDeCliente = new javax.swing.JComboBox<>();
+        btnCrearCliente = new javax.swing.JButton();
+        btnBuscarCliente = new javax.swing.JButton();
+        btnActualizarCliente = new javax.swing.JButton();
+        btnEliminarCliente = new javax.swing.JButton();
         lblTituloPrincipal = new javax.swing.JLabel();
-
-        jLabel3.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
-        jLabel3.setText("Administrar clientes");
-
-        lblDocumetoCliente.setText("Documento");
-
-        lblCorreoCliente.setText("Correo");
-
-        lblNombreCliente.setText("Nombre");
-
-        lblTelefonoCliente.setText("Telefono");
-
-        jLabel7.setText("Fecha de nacimiento");
-
-        txtDocumento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDocumentoActionPerformed(evt);
-            }
-        });
-
-        txtCorreo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCorreoActionPerformed(evt);
-            }
-        });
-
-        txtTelefono.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTelefonoActionPerformed(evt);
-            }
-        });
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel8.setText("Estatura");
-
-        jLabel9.setText("Tipo de cliente");
-
-        jTextField5.setText("jTextField5");
-
-        jLabel10.setText("Día");
-
-        jLabel11.setText("Mes");
-
-        jLabel12.setText("Año");
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        btnCrear.setText("Crear");
-        btnCrear.setActionCommand("Crear");
-        btnCrear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearActionPerformed(evt);
-            }
-        });
-
-        btnBuscar.setText("Buscar");
-
-        btnActualizar.setText("Actualizar");
-
-        btnEliminar.setText("Eliminar");
-
-        jButton5.setText("jButton5");
-
-        javax.swing.GroupLayout pnlAdminCuentasLayout = new javax.swing.GroupLayout(pnlAdminCuentas);
-        pnlAdminCuentas.setLayout(pnlAdminCuentasLayout);
-        pnlAdminCuentasLayout.setHorizontalGroup(
-            pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel7))
-                        .addGap(22, 22, 22)
-                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAdminCuentasLayout.createSequentialGroup()
-                                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                                        .addComponent(jLabel10)
-                                        .addGap(65, 65, 65)
-                                        .addComponent(jLabel11)
-                                        .addGap(72, 72, 72)
-                                        .addComponent(jLabel12)
-                                        .addGap(16, 16, 16))
-                                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(27, 27, 27)
-                                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(184, 184, 184))
-                            .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblTelefonoCliente)
-                                    .addComponent(lblCorreoCliente)
-                                    .addComponent(lblNombreCliente)
-                                    .addComponent(lblDocumetoCliente))
-                                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                                        .addGap(174, 174, 174)
-                                        .addComponent(jLabel3))
-                                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(txtTelefono, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 460, Short.MAX_VALUE)
-                                            .addComponent(txtCorreo, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGap(120, 120, 120)))
-                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnCrear)
-                            .addComponent(btnBuscar)
-                            .addComponent(btnActualizar)
-                            .addComponent(btnEliminar)
-                            .addComponent(jButton5))))
-                .addContainerGap(131, Short.MAX_VALUE))
-        );
-        pnlAdminCuentasLayout.setVerticalGroup(
-            pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(jLabel3)
-                .addGap(46, 46, 46)
-                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDocumetoCliente)
-                    .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombreCliente)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCrear))
-                .addGap(18, 18, 18)
-                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCorreoCliente)
-                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBuscar))
-                .addGap(18, 18, 18)
-                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblTelefonoCliente)
-                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnActualizar))
-                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(49, 49, 49)
-                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel8)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel9)
-                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(101, Short.MAX_VALUE))
-                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnEliminar)
-                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel11)
-                                    .addComponent(jLabel12))
-                                .addContainerGap(241, Short.MAX_VALUE))
-                            .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton5)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-        );
-
-        jTabbedPane1.addTab("AdminClientes", pnlAdminCuentas);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jLabel1.setText("Administrar clientes");
@@ -271,10 +79,186 @@ public class frmPrincipal extends javax.swing.JPanel {
             .addGroup(pnlAdminClientesLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jLabel1)
-                .addContainerGap(500, Short.MAX_VALUE))
+                .addContainerGap(480, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("AdminClientes", pnlAdminClientes);
+        jTabbedPane1.addTab("AdminCuentas", pnlAdminClientes);
+
+        jLabel3.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        jLabel3.setText("Administrar clientes");
+
+        lblDocumetoCliente.setText("Documento");
+
+        lblCorreoCliente.setText("Correo");
+
+        lblNombreCliente.setText("Nombre");
+
+        lblTelefonoCliente.setText("Telefono");
+
+        lblAnionNacimientoCliente.setText("Fecha de nacimiento");
+
+        txtDocumentoCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDocumentoClienteActionPerformed(evt);
+            }
+        });
+
+        txtCorreoCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCorreoClienteActionPerformed(evt);
+            }
+        });
+
+        txtTelefonoCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTelefonoClienteActionPerformed(evt);
+            }
+        });
+
+        cbxDiaNacimientoCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
+
+        lblEstaturaCliente.setText("Estatura");
+
+        lblTipoDeCliente.setText("Tipo de cliente");
+
+        lblDia.setText("Día");
+
+        jLabel11.setText("Mes");
+
+        jLabel12.setText("Año");
+
+        cbxTipoDeCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Persona Natural" }));
+
+        btnCrearCliente.setText("Crear");
+        btnCrearCliente.setActionCommand("Crear");
+        btnCrearCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearClienteActionPerformed(evt);
+            }
+        });
+
+        btnBuscarCliente.setText("Buscar");
+
+        btnActualizarCliente.setText("Actualizar");
+
+        btnEliminarCliente.setText("Eliminar");
+
+        javax.swing.GroupLayout pnlAdminCuentasLayout = new javax.swing.GroupLayout(pnlAdminCuentas);
+        pnlAdminCuentas.setLayout(pnlAdminCuentasLayout);
+        pnlAdminCuentasLayout.setHorizontalGroup(
+            pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblTipoDeCliente)
+                            .addComponent(lblEstaturaCliente)
+                            .addComponent(lblAnionNacimientoCliente))
+                        .addGap(22, 22, 22)
+                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cbxTipoDeCliente, 0, 308, Short.MAX_VALUE)
+                            .addComponent(txtEstaturaCliente)))
+                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAdminCuentasLayout.createSequentialGroup()
+                                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(cbxDiaNacimientoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblDia))
+                                .addGap(65, 65, 65)
+                                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAdminCuentasLayout.createSequentialGroup()
+                                        .addComponent(jLabel11)
+                                        .addGap(72, 72, 72)
+                                        .addComponent(jLabel12)
+                                        .addGap(16, 16, 16))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlAdminCuentasLayout.createSequentialGroup()
+                                        .addComponent(cbxMesNacimientoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(27, 27, 27)
+                                        .addComponent(cbxAñoNacimientoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(184, 184, 184))
+                            .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblTelefonoCliente)
+                                    .addComponent(lblCorreoCliente)
+                                    .addComponent(lblNombreCliente)
+                                    .addComponent(lblDocumetoCliente))
+                                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txtDocumentoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(txtTelefonoCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 460, Short.MAX_VALUE)
+                                            .addComponent(txtCorreoCliente, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtNombreCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(120, 120, 120)))
+                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnCrearCliente)
+                            .addComponent(btnBuscarCliente)
+                            .addComponent(btnActualizarCliente)
+                            .addComponent(btnEliminarCliente)))
+                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                        .addGap(290, 290, 290)
+                        .addComponent(jLabel3)))
+                .addContainerGap(131, Short.MAX_VALUE))
+        );
+        pnlAdminCuentasLayout.setVerticalGroup(
+            pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel3)
+                .addGap(49, 49, 49)
+                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDocumetoCliente)
+                    .addComponent(txtDocumentoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNombreCliente)
+                    .addComponent(txtNombreCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCrearCliente))
+                .addGap(18, 18, 18)
+                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCorreoCliente)
+                    .addComponent(txtCorreoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBuscarCliente))
+                .addGap(18, 18, 18)
+                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTelefonoCliente)
+                    .addComponent(txtTelefonoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnActualizarCliente))
+                .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(lblDia)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblAnionNacimientoCliente)
+                            .addComponent(cbxDiaNacimientoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbxMesNacimientoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbxAñoNacimientoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(49, 49, 49)
+                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblEstaturaCliente)
+                            .addComponent(txtEstaturaCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblTipoDeCliente)
+                            .addComponent(cbxTipoDeCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(81, Short.MAX_VALUE))
+                    .addGroup(pnlAdminCuentasLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnEliminarCliente)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(pnlAdminCuentasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12))
+                        .addContainerGap(222, Short.MAX_VALUE))))
+        );
+
+        jTabbedPane1.addTab("AdminClientes", pnlAdminCuentas);
 
         lblTituloPrincipal.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         lblTituloPrincipal.setText("Banco UCaldas");
@@ -317,54 +301,53 @@ public class frmPrincipal extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtDocumentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDocumentoActionPerformed
+    private void txtDocumentoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDocumentoClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDocumentoActionPerformed
+    }//GEN-LAST:event_txtDocumentoClienteActionPerformed
 
-    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
+    private void txtCorreoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCorreoActionPerformed
+    }//GEN-LAST:event_txtCorreoClienteActionPerformed
 
-    private void txtTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoActionPerformed
+    private void txtTelefonoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtTelefonoActionPerformed
+    }//GEN-LAST:event_txtTelefonoClienteActionPerformed
 
-    private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
+    private void btnCrearClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCrearActionPerformed
+    }//GEN-LAST:event_btnCrearClienteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnActualizar;
-    private javax.swing.JButton btnBuscar;
-    private javax.swing.JButton btnCrear;
-    private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JButton btnActualizarCliente;
+    private javax.swing.JButton btnBuscarCliente;
+    private javax.swing.JButton btnCrearCliente;
+    private javax.swing.JButton btnEliminarCliente;
+    private javax.swing.JComboBox<String> cbxAñoNacimientoCliente;
+    private javax.swing.JComboBox<String> cbxDiaNacimientoCliente;
+    private javax.swing.JComboBox<String> cbxMesNacimientoCliente;
+    private javax.swing.JComboBox<String> cbxTipoDeCliente;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JLabel lblAnionNacimientoCliente;
     private javax.swing.JLabel lblCorreoCliente;
+    private javax.swing.JLabel lblDia;
     private javax.swing.JLabel lblDocumetoCliente;
+    private javax.swing.JLabel lblEstaturaCliente;
     private javax.swing.JLabel lblNombreCliente;
     private javax.swing.JLabel lblTelefonoCliente;
+    private javax.swing.JLabel lblTipoDeCliente;
     private javax.swing.JLabel lblTituloPrincipal;
     private javax.swing.JPanel pnlAdminClientes;
     private javax.swing.JPanel pnlAdminCuentas;
-    private javax.swing.JTextField txtCorreo;
-    private javax.swing.JTextField txtDocumento;
-    private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtTelefono;
+    private javax.swing.JTextField txtCorreoCliente;
+    private javax.swing.JTextField txtDocumentoCliente;
+    private javax.swing.JTextField txtEstaturaCliente;
+    private javax.swing.JTextField txtNombreCliente;
+    private javax.swing.JTextField txtTelefonoCliente;
     // End of variables declaration//GEN-END:variables
 }

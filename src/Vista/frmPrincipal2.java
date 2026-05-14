@@ -5,13 +5,18 @@
  */
 package Vista;
 
+import ControladorBanco.ControladorBanco;
+import Modelo.*;
 import java.time.LocalDate;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author natam
  */
 public class frmPrincipal2 extends javax.swing.JFrame {
+
+    ControladorBanco banco;
 
     /**
      * Creates new form frmPrincipal2
@@ -20,7 +25,8 @@ public class frmPrincipal2 extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         llenarCombox();
-        
+        banco = new ControladorBanco();
+
     }
 
     /**
@@ -50,16 +56,16 @@ public class frmPrincipal2 extends javax.swing.JFrame {
         btnActualizarCliente = new javax.swing.JButton();
         btnEliminarCliente = new javax.swing.JButton();
         lblAnionNacimientoCliente = new javax.swing.JLabel();
-        lblDia = new javax.swing.JLabel();
+        lblDiaNacimientoCliente = new javax.swing.JLabel();
         cbxDiaNacimientoCliente = new javax.swing.JComboBox<>();
         cbxMesNacimientoCliente = new javax.swing.JComboBox<>();
-        jLabel12 = new javax.swing.JLabel();
+        lblAnioNacimientoCliente = new javax.swing.JLabel();
         cbxAñoNacimientoCliente = new javax.swing.JComboBox<>();
         lblEstaturaCliente = new javax.swing.JLabel();
         txtEstaturaCliente = new javax.swing.JTextField();
         lblTipoDeCliente = new javax.swing.JLabel();
         cbxTipoDeCliente = new javax.swing.JComboBox<>();
-        jLabel13 = new javax.swing.JLabel();
+        lblMesNacimientoCliente = new javax.swing.JLabel();
         lblBancoUCaldas = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -121,11 +127,11 @@ public class frmPrincipal2 extends javax.swing.JFrame {
 
         lblAnionNacimientoCliente.setText("Fecha de nacimiento");
 
-        lblDia.setText("Día");
+        lblDiaNacimientoCliente.setText("Día");
 
         cbxDiaNacimientoCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
 
-        jLabel12.setText("Año");
+        lblAnioNacimientoCliente.setText("Año");
 
         lblEstaturaCliente.setText("Estatura");
 
@@ -133,7 +139,7 @@ public class frmPrincipal2 extends javax.swing.JFrame {
 
         cbxTipoDeCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Persona Natural" }));
 
-        jLabel13.setText("Mes");
+        lblMesNacimientoCliente.setText("Mes");
 
         javax.swing.GroupLayout panel3Layout = new javax.swing.GroupLayout(panel3);
         panel3.setLayout(panel3Layout);
@@ -157,15 +163,15 @@ public class frmPrincipal2 extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
                                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(cbxDiaNacimientoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblDia))
+                                    .addComponent(lblDiaNacimientoCliente))
                                 .addGap(72, 72, 72)
                                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel13)
+                                    .addComponent(lblMesNacimientoCliente)
                                     .addComponent(cbxMesNacimientoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(64, 64, 64)
                                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(cbxAñoNacimientoCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING))
+                                    .addComponent(lblAnioNacimientoCliente, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addGap(184, 184, 184))
                             .addGroup(panel3Layout.createSequentialGroup()
                                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -223,13 +229,13 @@ public class frmPrincipal2 extends javax.swing.JFrame {
                         .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panel3Layout.createSequentialGroup()
                                 .addGap(46, 46, 46)
-                                .addComponent(lblDia)
+                                .addComponent(lblDiaNacimientoCliente)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel12)
-                                    .addComponent(jLabel13))
+                                    .addComponent(lblAnioNacimientoCliente)
+                                    .addComponent(lblMesNacimientoCliente))
                                 .addGap(15, 15, 15)))
                         .addGroup(panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblAnionNacimientoCliente)
@@ -310,6 +316,7 @@ public class frmPrincipal2 extends javax.swing.JFrame {
 
     private void btnCrearClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearClienteActionPerformed
         // TODO add your handling code here:
+        crearCliente();
     }//GEN-LAST:event_btnCrearClienteActionPerformed
 
     /**
@@ -356,15 +363,15 @@ public class frmPrincipal2 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbxDiaNacimientoCliente;
     private javax.swing.JComboBox<String> cbxMesNacimientoCliente;
     private javax.swing.JComboBox<String> cbxTipoDeCliente;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblAnioNacimientoCliente;
     private javax.swing.JLabel lblAnionNacimientoCliente;
     private javax.swing.JLabel lblBancoUCaldas;
     private javax.swing.JLabel lblCorreoCliente;
-    private javax.swing.JLabel lblDia;
+    private javax.swing.JLabel lblDiaNacimientoCliente;
     private javax.swing.JLabel lblDocumetoCliente;
     private javax.swing.JLabel lblEstaturaCliente;
+    private javax.swing.JLabel lblMesNacimientoCliente;
     private javax.swing.JLabel lblNombreCliente;
     private javax.swing.JLabel lblTelefonoCliente;
     private javax.swing.JLabel lblTipoDeCliente;
@@ -378,23 +385,55 @@ public class frmPrincipal2 extends javax.swing.JFrame {
     private javax.swing.JTextField txtNombreCliente;
     private javax.swing.JTextField txtTelefonoCliente;
     // End of variables declaration//GEN-END:variables
-   
-    private void llenarCombox () {
+
+    private void llenarCombox() {
         //Día de nacimiento
-        for (int i = 31; i >= 1; i--){
+        for (int i = 31; i >= 1; i--) {
             cbxDiaNacimientoCliente.addItem(i + "");
-            
+
         }
         //Mes de nacimiento
-        for (int i = 12
-                ; i >= 1; i--){
-            cbxMesNacimientoCliente.addItem(i + "");   
+        for (int i = 12; i >= 1; i--) {
+            cbxMesNacimientoCliente.addItem(i + "");
         }
         //Año de nacimiento
         for (int i = LocalDate.now().getYear(); i >= 2000; i--) {
             cbxAñoNacimientoCliente.addItem(i + "");
         }
     }
-    
 
+    private void crearCliente() {
+
+        if (txtDocumentoCliente.getText().equals("")) {
+            JOptionPane.showInternalMessageDialog(this, "El documento es obligatorio");
+        } else if (txtNombreCliente.getText().equals("")) {
+            JOptionPane.showInternalMessageDialog(this, "El nombre es obligatorio");
+        } else if (txtCorreoCliente.getText().equals("")) {
+            JOptionPane.showInternalMessageDialog(this, "El correo es obligatorio");
+        } else if (txtTelefonoCliente.getText().equals("")) {
+            JOptionPane.showInternalMessageDialog(this, "El telefono es obligatorio");
+        } else if (txtEstaturaCliente.getText().equals("")) {
+            JOptionPane.showInternalMessageDialog(this, "La estatura es obligatorio");
+        } else {
+
+            String tipo = cbxTipoDeCliente.getSelectedItem().toString();
+            String documento = txtDocumentoCliente.getText();
+            String nombre = txtNombreCliente.getText();
+            String correo = txtCorreoCliente.getText();
+            String telefono = txtTelefonoCliente.getText();
+            int diaDeNacimiento = Integer.parseInt(cbxDiaNacimientoCliente.getSelectedItem().toString());
+            int mesDeNacimineto = Integer.parseInt(cbxMesNacimientoCliente.getSelectedItem().toString());
+            int anioDeNacimiento = Integer.parseInt(cbxAñoNacimientoCliente.getSelectedItem().toString());
+            double estatura = Double.parseDouble(txtEstaturaCliente.getText());
+
+            Cliente cliente = banco.crearCliente(tipo, documento, nombre, correo, telefono, ICONIFIED, ICONIFIED, ICONIFIED, ERROR);
+            if (cliente != null) {
+                JOptionPane.showInternalMessageDialog(this, "Cliente creado correctamente...");
+                System.out.println(cliente.getDocumento() + " - " + cliente.getNombre());
+            } else {
+                JOptionPane.showInternalMessageDialog(this, "Error al crear el cliente...");
+            }
+        }
+
+    }
 }

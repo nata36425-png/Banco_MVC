@@ -127,17 +127,17 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Component id="cbxDiaNacimientoCliente" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblDia" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblDiaNacimientoCliente" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblMesNacimientoCliente" min="-2" max="-2" attributes="0"/>
                                               <Component id="cbxMesNacimientoCliente" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="cbxAñoNacimientoCliente" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblAnioNacimientoCliente" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="184" max="-2" attributes="0"/>
                                       </Group>
@@ -214,14 +214,14 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
                                           <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                          <Component id="lblDia" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblDiaNacimientoCliente" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblAnioNacimientoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblMesNacimientoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                       </Group>
@@ -328,7 +328,7 @@
                     <Property name="text" type="java.lang.String" value="Fecha de nacimiento"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lblDia">
+                <Component class="javax.swing.JLabel" name="lblDiaNacimientoCliente">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="D&#xed;a"/>
                   </Properties>
@@ -355,7 +355,7 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel12">
+                <Component class="javax.swing.JLabel" name="lblAnioNacimientoCliente">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="A&#xf1;o"/>
                   </Properties>
@@ -394,7 +394,7 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel13">
+                <Component class="javax.swing.JLabel" name="lblMesNacimientoCliente">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Mes"/>
                   </Properties>
